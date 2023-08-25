@@ -1,0 +1,48 @@
+.title {
+  display: flex;
+  background-color: #f6f6f6;
+  height: 287px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 39px;
+}
+.title-page {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.title-p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.cards-txt {
+  margin-left: 15px;
+  margin-bottom: 12px;
+}
+.cards-txt-p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cards-txt-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.a {
+  text-decoration: none;
+}/*# sourceMappingURL=typography.css.map */

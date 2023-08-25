@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.fonction-button-unit {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  width: 80%;
+  height: 72px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 32px;
+  padding-right: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  gap: 27px;
+}
+
+.fonction-button-unit-purple {
+  color: #9356dc;
+}
+
+.title-page-button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(175deg, #ff79da 0%, #9356dc 100%));
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.restaurants-cards-unit img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 231px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.restaurants-cards-unit {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 18px;
+  width: 92%;
+  max-width: 600px;
+  background-color: white;
+}
+
+.card-link {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  background-color: #f6f6f6;
+  height: 287px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 39px;
+}
+.title-page {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.title-p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.cards-txt {
+  margin-left: 15px;
+  margin-bottom: 12px;
+}
+.cards-txt-p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cards-txt-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+}
+.logo-main {
+  display: flex;
+  height: 36px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  gap: 17px;
+}
+.location .search {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  border: none;
+  background: none;
+  font-family: Roboto, sans-serif;
+}
+
+.fa-location-dot {
+  color: black;
+}
+
+.fonction {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 68px;
+  padding-top: 48px;
+}
+.fonction-button {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fonction-button-unit-grey {
+  color: #7e7e7e;
+}
+.fonction-title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding-bottom: 68px;
+  padding-top: 48px;
+}
+.restaurants-title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 20px;
+}
+.restaurants-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #353535;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  align-items: flex-start;
+}
+.footer-logo {
+  width: 140px;
+  height: auto;
+  color: white;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+  gap: 7px;
+}
+.footer-link-unit {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-logo {
+  color: white;
+}/*# sourceMappingURL=index.css.map */

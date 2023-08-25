@@ -1,0 +1,27 @@
+.restaurants-cards-unit img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 231px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.restaurants-cards-unit {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 18px;
+  width: 92%;
+  max-width: 600px;
+  background-color: white;
+}
+
+.card-link {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: none;
+}/*# sourceMappingURL=cards.css.map */

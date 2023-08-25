@@ -1,0 +1,52 @@
+@import 'color.scss';
+
+//***boutton partie fonctionnement ***//
+.fonction-button-unit {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  width: 80%;
+  height: 72px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 32px;
+  padding-right: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  gap: 27px;
+}
+
+.fonction-button-unit-purple {
+  color: $color-primaire;
+}
+
+//*** boutton explorer nos restaurants***//
+.title-page-button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(
+    --button-gradient,
+    linear-gradient(175deg, $color-secondaire 0%, $color-primaire 100%)
+  );
+  width: fit-content;
+  height: 50px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
