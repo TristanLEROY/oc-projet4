@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 .fonction-button-unit {
   display: flex;
   align-self: center;
@@ -44,6 +46,41 @@
   padding-right: 18px;
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/***boutton Commander ***/
+.command-button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(175deg, #ff79da 0%, #9356dc 100%));
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 48px;
+  padding-right: 48px;
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/**** Boutton retour en arrière***/
+.goback {
+  display: flex;
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
 }
 
 .restaurants-cards-unit img {
@@ -121,6 +158,110 @@
 
 .a {
   text-decoration: none;
+}
+
+.page-title {
+  color: var(--black, #101010);
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-stage {
+  display: flex;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 3.5%;
+  border-bottom: #99e2d0 2px solid;
+  width: 40px;
+  height: 27px;
+}
+
+.menu-cards-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: -10px;
+}
+
+.menu-cards-p {
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.menu-cards-price {
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu {
+  position: relative;
+  margin-top: -25px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-cards {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 15px;
+}
+.menu-cards-price {
+  display: flex;
+  align-self: flex-end;
+}
+.menu-cards-cards-unit {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.menu-entry {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 body {
@@ -233,7 +374,6 @@ body {
   color: white;
   text-decoration: none;
 }
-
 .footer-logo {
-  color: white;
+  filter: invert(1);
 }/*# sourceMappingURL=index.css.map */

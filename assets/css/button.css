@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fonction-button-unit {
   display: flex;
   align-self: center;
@@ -43,4 +44,39 @@
   padding-right: 18px;
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/***boutton Commander ***/
+.command-button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(175deg, #ff79da 0%, #9356dc 100%));
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 48px;
+  padding-right: 48px;
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/**** Boutton retour en arrière***/
+.goback {
+  display: flex;
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
 }/*# sourceMappingURL=button.css.map */

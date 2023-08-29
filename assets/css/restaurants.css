@@ -1,0 +1,51 @@
+.main-img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu {
+  position: relative;
+  margin-top: -25px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-cards {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 15px;
+}
+.menu-cards-price {
+  display: flex;
+  align-self: flex-end;
+}
+.menu-cards-cards-unit {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.menu-entry {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=restaurants.css.map */

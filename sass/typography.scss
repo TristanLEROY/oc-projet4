@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+@import 'color.scss';
+
 .title {
   display: flex;
   background-color: #f6f6f6;
@@ -47,4 +50,56 @@
 
 .a {
   text-decoration: none;
+}
+
+.page-title {
+  color: var(--black, #101010);
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-stage {
+  display: flex;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 3.5%;
+  border-bottom: $color-tertiaire 2px solid;
+  width: 40px;
+  height: 27px;
+}
+
+.menu-cards-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: -10px;
+}
+
+.menu-cards-p {
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.menu-cards-price {
+  color: $footer-color;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
