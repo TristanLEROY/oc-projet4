@@ -6,6 +6,24 @@
   border-radius: 15px 15px 0px 0px;
 }
 
+.restaurants-cards-container {
+  position: relative;
+}
+
+.restaurants-cards-new {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+}
+
 .restaurants-cards-unit {
   display: flex;
   flex-direction: column;
@@ -24,4 +42,18 @@
   left: 0;
   width: 100%;
   text-decoration: none;
+}
+
+.menu-cards {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 15px;
 }/*# sourceMappingURL=cards.css.map */

@@ -52,6 +52,16 @@
   text-decoration: none;
 }
 
+.restaurants-cards-container {
+  color: $color-four;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .page-title {
   color: var(--black, #101010);
   font-family: Shrikhand;
