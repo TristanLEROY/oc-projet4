@@ -4,15 +4,18 @@
 .title {
   display: flex;
   background-color: #f6f6f6;
-  height: 287px;
+  height: 17.938rem;
   width: 100%;
   flex-direction: column;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 2.438rem;
 
+  @media (min-width: 1024px) {
+    height: 15rem;
+  }
   &-page {
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -20,28 +23,39 @@
 
   &-p {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
   }
 }
 
+.category-title {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 1.25rem;
+}
+
 .cards-txt {
-  margin-left: 15px;
-  margin-bottom: 12px;
+  margin-left: 0.938rem;
+  margin-bottom: 0.75rem;
+
   &-p {
     color: #000;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
   }
+
   &-title {
     color: #000;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -52,11 +66,20 @@
   text-decoration: none;
 }
 
+.fonction-button-number {
+  color: var(--White, #fff);
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .restaurants-cards-container {
   color: $color-four;
   text-align: center;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -65,7 +88,7 @@
 .page-title {
   color: var(--black, #101010);
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -73,43 +96,46 @@
   justify-content: center;
 }
 
-.menu-stage {
-  display: flex;
-  color: #000;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-left: 3.5%;
-  border-bottom: $color-tertiaire 2px solid;
-  width: 40px;
-  height: 27px;
-}
+.menu {
+  &-title {
+    display: flex;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 3.5%;
+    border-bottom: $color-tertiaire 2px solid;
+    width: 2.5rem;
+    height: 1.688rem;
+  }
+  &-cards {
+    &-title {
+      font-family: Roboto;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: -10px;
+    }
 
-.menu-cards-title {
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: -10px;
-}
+    &-p {
+      font-family: Roboto;
+      font-size: 0.938rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
 
-.menu-cards-p {
-  font-family: Roboto;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.menu-cards-price {
-  color: $footer-color;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    &-price {
+      color: $footer-color;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 0.938rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
 }

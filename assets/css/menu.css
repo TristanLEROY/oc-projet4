@@ -28,7 +28,7 @@
   line-height: normal;
 }
 
-.category-title {
+.restaurants-title {
   font-family: Roboto;
   font-size: 1.5rem;
   font-style: normal;
@@ -128,4 +128,53 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}/*# sourceMappingURL=typography.css.map */
+}
+
+.menu {
+  position: relative;
+  margin-top: -2rem;
+  background-color: #f6f6f6;
+  border-top-left-radius: 1.563rem;
+  border-top-right-radius: 1.563rem;
+  width: 100%;
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    align-self: center;
+    width: 74%;
+  }
+}
+.menu-cards-price {
+  position: absolute;
+  bottom: 0.813rem;
+  right: 0.938rem;
+}
+.menu-cards-unit {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.menu-entry {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.menu-cards {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 0.938rem;
+  margin-bottom: 0.75rem;
+  width: 90%;
+  height: 2.5rem;
+  background-color: white;
+  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 0.938rem;
+}/*# sourceMappingURL=menu.css.map */

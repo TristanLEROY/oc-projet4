@@ -2,9 +2,9 @@
 
 .restaurants-cards-unit img {
   object-fit: cover;
-  height: 231px;
+  height: 14.438rem;
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 0.938rem 0.938rem 0rem 0rem;
 }
 
 .restaurants-cards-container {
@@ -14,13 +14,13 @@
 .restaurants-cards-new {
   display: flex;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1.25rem;
+  right: 1.25rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   background-color: $color-tertiaire;
-  width: 80px;
-  height: 29px;
+  width: 5rem;
+  height: 1.813rem;
   justify-content: center;
   align-items: center;
 }
@@ -28,12 +28,9 @@
 .restaurants-cards-unit {
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 18px;
-  width: 92%;
-  max-width: 600px;
+  border-radius: 0.938rem;
+  margin-bottom: 1.125rem;
+  width: 45%;
   background-color: white;
 }
 
@@ -43,18 +40,4 @@
   left: 0;
   width: 100%;
   text-decoration: none;
-}
-
-.menu-cards {
-  display: flex;
-  position: relative;
-  align-items: center;
-  border-radius: 15px;
-  margin-bottom: 12px;
-  width: 90%;
-  height: 40px;
-  background-color: white;
-  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
-  justify-content: space-between;
-  padding: 15px;
 }

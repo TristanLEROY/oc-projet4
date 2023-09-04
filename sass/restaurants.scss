@@ -1,83 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import 'button.scss';
 @import 'color.scss';
 @import 'cards.scss';
 @import 'typography.scss';
+@import 'menu.scss';
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  margin: -8px;
+}
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 63px;
+  height: 3.9rem;
 
   &-main {
     display: flex;
-    height: 36px;
+    height: 2.25rem;
   }
 }
 
 .main-img {
   width: 100%;
-  height: 275px;
+  height: 17.1rem;
   object-fit: cover;
-}
-
-.restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: $main-bg-color;
-  padding-bottom: 68px;
-  padding-top: 48px;
-
-  &-title {
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding-left: 20px;
-  }
-  &-cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
 }
 
 .section-entry {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
 
-  gap: 12px;
-}
-.menu {
-  position: relative;
-  margin-top: -25px;
-  background-color: $main-bg-color;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  width: 100%;
-  gap: 40px;
-  display: flex;
-  flex-direction: column;
-
-  &-cards-price {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-  }
-
-  &-cards-unit {
+  @media (min-width: 1024px) {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  &-entry {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    align-self: center;
+    width: 50%;
   }
 }
 
@@ -87,11 +49,18 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  padding: 22px 25px;
+  padding: 1.375rem 1.563rem;
   align-items: flex-start;
 
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
   &-logo {
-    width: 140px;
+    width: 8.75rem;
     height: auto;
     color: white;
   }
@@ -101,12 +70,19 @@
     list-style: none;
     padding-inline-start: 0;
     gap: 7px;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
   }
 
   &-link-unit {
     color: white;
     text-decoration: none;
   }
+
   &-logo {
     filter: invert(1);
   }
