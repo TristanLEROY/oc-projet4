@@ -1,37 +1,91 @@
 @import 'color.scss';
+@import 'keyframe.scss';
 
-.restaurants-cards-unit img {
-  object-fit: cover;
-  height: 14.438rem;
-  width: 100%;
-  border-radius: 0.938rem 0.938rem 0rem 0rem;
-}
-
-.restaurants-cards-container {
-  position: relative;
-}
-
-.restaurants-cards-new {
+.restaurants-cards {
   display: flex;
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
-  background-color: $color-tertiaire;
-  width: 5rem;
-  height: 1.813rem;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-new {
+    display: flex;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    background-color: $color-tertiaire;
+    width: 5rem;
+    height: 1.813rem;
+    justify-content: center;
+    align-items: center;
+  }
+  &-unit {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.938rem;
+    margin-bottom: 1.125rem;
+    width: 90%;
+    background-color: white;
+
+    @media (min-width: 1024px) {
+      width: 45%;
+    }
+
+    & img {
+      object-fit: cover;
+      height: 14.438rem;
+      width: 100%;
+      border-radius: 0.938rem 0.938rem 0rem 0rem;
+    }
+  }
 }
 
-.restaurants-cards-unit {
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.938rem;
-  margin-bottom: 1.125rem;
-  width: 45%;
-  background-color: white;
+.cards-txt {
+  display: grid;
+
+  &-two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &-three {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+    font-size: larger;
+    -webkit-text-stroke: 1px black;
+    color: white;
+
+    &:hover {
+      animation: progress-heart 1000ms;
+      -webkit-text-stroke: 0px;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(
+        to bottom,
+        #9356dc,
+        #b35cdc,
+        #cf64dc,
+        #e86edb,
+        #ff79da
+      );
+    }
+  }
 }
 
 .card-link {

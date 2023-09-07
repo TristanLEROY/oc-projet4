@@ -2,6 +2,7 @@
 @import 'color.scss';
 @import 'cards.scss';
 @import 'typography.scss';
+@import 'keyframe.scss';
 
 body {
   margin: 0px;
@@ -12,6 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 3.938rem;
+  animation-duration: 3s;
+  animation-name: slideup;
+  transform-origin: 50% bottom;
 
   @media (min-width: 1024px) {
     height: 4rem;
@@ -91,6 +95,10 @@ body {
       align-items: center;
       left: 0.7rem;
       top: 1.5rem;
+
+      @media (min-width: 1024px) {
+        width: 2rem;
+      }
     }
   }
 
@@ -112,23 +120,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-
-  &-cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    @media (min-width: 1024px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-  }
 }
 
-.footer {
+footer {
   background-color: $footer-color;
   height: auto;
   width: auto;
@@ -144,12 +138,13 @@ body {
     padding-top: 2rem;
   }
 
-  &-logo {
+  .footer-logo {
     width: 8.75rem;
     height: auto;
     color: white;
+    filter: invert(1);
   }
-  &-link {
+  .footer-link {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -161,14 +156,10 @@ body {
       flex-direction: row;
       gap: 1.5rem;
     }
-  }
 
-  &-link-unit {
-    color: white;
-    text-decoration: none;
-  }
-
-  &-logo {
-    filter: invert(1);
+    &-unit {
+      color: white;
+      text-decoration: none;
+    }
   }
 }

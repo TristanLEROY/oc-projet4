@@ -1,4 +1,5 @@
 @import 'typography.scss';
+@import 'keyframe.scss';
 
 .menu {
   position: relative;
@@ -17,18 +18,42 @@
     width: 74%;
   }
 
-  &-cards-price {
-    position: absolute;
-    bottom: 0.813rem;
-    right: 0.938rem;
-  }
-
-  &-cards-unit {
+  &-cards {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
+    position: relative;
+    align-items: center;
+    border-radius: 0.938rem;
+    margin-bottom: 0.75rem;
+    width: 90%;
+    height: 2.5rem;
+    background-color: white;
+    box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding: 0.938rem;
+    animation: slidein 3s ease-in;
+    transform-origin: 50% right;
+    @media (min-width: 1024px) {
+      width: 150%;
+    }
 
+    &-body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    &-price {
+      position: absolute;
+      bottom: 0.813rem;
+      right: 0.938rem;
+    }
+
+    &-unit {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
   &-entry {
     display: flex;
     align-content: center;
@@ -37,16 +62,31 @@
   }
 }
 
-.menu-cards {
-  display: flex;
-  position: relative;
-  align-items: center;
-  border-radius: 0.938rem;
-  margin-bottom: 0.75rem;
-  width: 90%;
-  height: 2.5rem;
+.fa-check {
+  display: inline-block;
+  border: 1px white solid;
+  border-radius: 100%;
   background-color: white;
-  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
-  justify-content: space-between;
-  padding: 0.938rem;
+  color: $color-tertiaire;
+  font-size: 1.5rem;
+}
+.menu-cards {
+  &:hover > .menu-cards-check {
+    transform: scale(2);
+  }
+  .menu-cards-check {
+    display: flex;
+    width: 5rem;
+    margin-top: 3.9px;
+    position: absolute;
+    right: 0%;
+    background-color: $color-tertiaire;
+    border-radius: 0 0.938rem 0.938rem 0;
+    height: -webkit-fill-available;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transform: scale(1);
+  }
 }

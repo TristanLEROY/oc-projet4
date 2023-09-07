@@ -50,6 +50,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin: 5px;
   }
 
   &-title {
@@ -59,6 +60,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 5px;
   }
 }
 
@@ -105,7 +107,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-left: 3.5%;
+    margin-left: -25.5%;
     border-bottom: $color-tertiaire 2px solid;
     width: 2.5rem;
     height: 1.688rem;

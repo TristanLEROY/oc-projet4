@@ -48,6 +48,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin: 5px;
 }
 .cards-txt-title {
   color: #000;
@@ -56,6 +57,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 5px;
 }
 
 .a {
@@ -100,7 +102,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-left: 3.5%;
+  margin-left: -25.5%;
   border-bottom: #99e2d0 2px solid;
   width: 2.5rem;
   height: 1.688rem;

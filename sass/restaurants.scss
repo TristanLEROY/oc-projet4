@@ -7,6 +7,12 @@
 main {
   display: flex;
   flex-direction: column;
+
+  .main-img {
+    width: 100%;
+    height: 17.1rem;
+    object-fit: cover;
+  }
 }
 
 .main-container {
@@ -25,12 +31,6 @@ main {
   }
 }
 
-.main-img {
-  width: 100%;
-  height: 17.1rem;
-  object-fit: cover;
-}
-
 .section-entry {
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ main {
   }
 }
 
-.footer {
+footer {
   background-color: $footer-color;
   height: auto;
   width: auto;
@@ -59,12 +59,13 @@ main {
     padding-top: 2rem;
   }
 
-  &-logo {
+  .footer-logo {
     width: 8.75rem;
     height: auto;
     color: white;
+    filter: invert(1);
   }
-  &-link {
+  .footer-link {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -76,14 +77,10 @@ main {
       flex-direction: row;
       gap: 1.5rem;
     }
-  }
 
-  &-link-unit {
-    color: white;
-    text-decoration: none;
-  }
-
-  &-logo {
-    filter: invert(1);
+    &-unit {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
