@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+.loader-waiting {
+  color: white;
+  font-family: Shrikhand;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   display: flex;
   background-color: #f6f6f6;
@@ -37,33 +48,6 @@
   padding-left: 1.25rem;
 }
 
-.cards-txt {
-  margin-left: 0.938rem;
-  margin-bottom: 0.75rem;
-}
-.cards-txt-p {
-  color: #000;
-  font-family: Roboto;
-  font-size: 1.063rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin: 5px;
-}
-.cards-txt-title {
-  color: #000;
-  font-family: Roboto;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 5px;
-}
-
-.a {
-  text-decoration: none;
-}
-
 .fonction-button-number {
   color: var(--White, #fff);
   font-family: Roboto;
@@ -94,6 +78,33 @@
   justify-content: center;
 }
 
+.cards-txt {
+  margin-left: 0.938rem;
+  margin-bottom: 0.75rem;
+}
+.cards-txt-p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 5px;
+}
+.cards-txt-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 5px;
+}
+
+.a {
+  text-decoration: none;
+}
+
 .menu-title {
   display: flex;
   color: #000;
@@ -119,6 +130,9 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: -10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-cards-p {
   font-family: Roboto;
@@ -126,6 +140,9 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-cards-price {
   color: #353535;

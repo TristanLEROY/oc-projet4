@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+.loader-waiting {
+  color: white;
+  font-family: Shrikhand;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   display: flex;
   background-color: #f6f6f6;
@@ -37,33 +48,6 @@
   padding-left: 1.25rem;
 }
 
-.cards-txt {
-  margin-left: 0.938rem;
-  margin-bottom: 0.75rem;
-}
-.cards-txt-p {
-  color: #000;
-  font-family: Roboto;
-  font-size: 1.063rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin: 5px;
-}
-.cards-txt-title {
-  color: #000;
-  font-family: Roboto;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 5px;
-}
-
-.a {
-  text-decoration: none;
-}
-
 .fonction-button-number {
   color: var(--White, #fff);
   font-family: Roboto;
@@ -94,6 +78,33 @@
   justify-content: center;
 }
 
+.cards-txt {
+  margin-left: 0.938rem;
+  margin-bottom: 0.75rem;
+}
+.cards-txt-p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 5px;
+}
+.cards-txt-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 5px;
+}
+
+.a {
+  text-decoration: none;
+}
+
 .menu-title {
   display: flex;
   color: #000;
@@ -119,6 +130,9 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: -10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-cards-p {
   font-family: Roboto;
@@ -126,6 +140,9 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu-cards-price {
   color: #353535;
@@ -149,23 +166,16 @@
 }
 @keyframes progress-heart {
   0% {
-    transform: scaleX(0) scaleY(1);
-    opacity: 0.1;
+    transform: scale(1);
+    -webkit-background-clip: text;
   }
-  17% {
-    transform: scaleX(0.18) scaleY(1.1);
-  }
-  24% {
-    transform: scaleX(0.4) scaleY(1.2);
-  }
-  46% {
-    transform: scaleX(0.81) scaleY(1.3 0.5);
-  }
-  85%, 100% {
-    opacity: 1;
+  50% {
+    transform: scale(1.5);
+    -webkit-background-clip: text;
   }
   100% {
-    transform: scaleX(1) scaleY(1.5);
+    transform: scale(1);
+    -webkit-background-clip: text;
   }
 }
 @keyframes progress-check {
@@ -176,6 +186,33 @@
   to {
     opacity: 100%;
     transform: translateX(0);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes waiting-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .menu {
@@ -206,11 +243,31 @@
   width: 85%;
   height: 2.5rem;
   background-color: white;
-  box-shadow: 0px 4px 15.1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 0.25rem 0.938rem 0rem rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   padding: 0.938rem;
-  animation: slidein 3s ease-in;
+  transform: translateX(0.938rem);
+  animation: progresse-check 1s forwards;
+  animation: slidein 1.5s ease-in;
   transform-origin: 50% right;
+}
+.menu-cards:hover > .menu-cards-check {
+  width: 4.375rem;
+}
+.menu-cards-check {
+  display: flex;
+  width: 0;
+  height: 4.375rem;
+  background-color: #99e2d0;
+  border-radius: 0 0.938rem 0.938rem 0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 0.938rem;
+  margin-right: -0.938rem;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .menu-cards {
@@ -218,17 +275,17 @@
   }
 }
 .menu-cards-body {
-  width: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.menu-entry {
+.menu-content {
   display: flex;
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: -20px;
+  margin-left: -1.25rem;
 }
 
 .fa-check {
@@ -239,27 +296,4 @@
   color: #99e2d0;
   font-size: 1.5rem;
   opacity: 1;
-}
-
-.menu-cards {
-  transform: translateX(15px);
-  animation: progresse-check 1s forwards;
-}
-.menu-cards:hover > .menu-cards-check {
-  width: 70px;
-}
-.menu-cards .menu-cards-check {
-  display: flex;
-  width: 0;
-  height: 70px;
-  background-color: #99e2d0;
-  border-radius: 0 0.938rem 0.938rem 0;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  margin-left: 15px;
-  margin-right: -15px;
-  transition: all 0.7s ease-in-out;
-  overflow: hidden;
 }/*# sourceMappingURL=menu.css.map */
