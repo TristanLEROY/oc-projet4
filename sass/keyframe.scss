@@ -6,7 +6,7 @@
   }
 
   to {
-    margin-left: 0%;
+    margin-left: 0;
     opacity: 1;
   }
 }
@@ -35,17 +35,14 @@
   }
 }
 
-//keyframe de la page d'acceuil //
-@keyframes slideup {
+// keyframe check-card
+@keyframes progress-check {
   from {
-    margin-bottom: 1000px;
-    width: 100%;
+    transform: translateX(20px);
     opacity: 0;
   }
-
   to {
-    margin-bottom: 0%;
-    width: 100%;
-    opacity: 1;
+    opacity: 100%;
+    transform: translateX(0);
   }
 }

@@ -53,6 +53,10 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin-top: 1.25rem;
 }
+.title-page-button:hover {
+  filter: brightness(1.1);
+  box-shadow: 2px 6px 12px 2px rgba(0, 0, 0, 0.25);
+}
 
 /***boutton Commander ***/
 .command-button {
@@ -77,6 +81,10 @@
   margin-bottom: 2.5rem;
   margin-top: 1.25rem;
 }
+.command-button:hover {
+  filter: brightness(1.1);
+  box-shadow: 2px 6px 12px 2px rgba(0, 0, 0, 0.25);
+}
 
 /**** Boutton retour en arrière***/
 .goback {
@@ -91,12 +99,12 @@
 
 @keyframes slidein {
   from {
-    margin-left: 2000px;
-    width: 150%;
+    margin-left: 30px;
+    opacity: 0;
   }
   to {
-    margin-left: 0%;
-    width: 150%;
+    margin-left: 0;
+    opacity: 1;
   }
 }
 @keyframes progress-heart {
@@ -120,16 +128,14 @@
     transform: scaleX(1) scaleY(1.5);
   }
 }
-@keyframes slideup {
+@keyframes progress-check {
   from {
-    margin-bottom: 1000px;
-    width: 100%;
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
-    margin-bottom: 0%;
-    width: 100%;
-    opacity: 1;
+    opacity: 100%;
+    transform: translateX(0);
   }
 }
 .restaurants-cards {
@@ -184,7 +190,13 @@
 }
 
 .cards-txt {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cards-txt-script {
+  display: flex;
+  flex-direction: column;
 }
 .cards-txt-two {
   grid-column: 1;
@@ -195,11 +207,11 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  grid-column: 3;
-  grid-row: 2;
   font-size: larger;
   -webkit-text-stroke: 1px black;
   color: white;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 .cards-txt-three:hover {
   animation: progress-heart 1000ms;
@@ -321,10 +333,15 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-left: -25.5%;
+  margin-left: 6.5%;
   border-bottom: #99e2d0 2px solid;
   width: 2.5rem;
   height: 1.688rem;
+}
+@media (min-width: 1024px) {
+  .menu-title {
+    margin-left: -25.5%;
+  }
 }
 .menu-cards-title {
   font-family: Roboto;
@@ -353,12 +370,12 @@
 
 @keyframes slidein {
   from {
-    margin-left: 2000px;
-    width: 150%;
+    margin-left: 30px;
+    opacity: 0;
   }
   to {
-    margin-left: 0%;
-    width: 150%;
+    margin-left: 0;
+    opacity: 1;
   }
 }
 @keyframes progress-heart {
@@ -382,16 +399,14 @@
     transform: scaleX(1) scaleY(1.5);
   }
 }
-@keyframes slideup {
+@keyframes progress-check {
   from {
-    margin-bottom: 1000px;
-    width: 100%;
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
-    margin-bottom: 0%;
-    width: 100%;
-    opacity: 1;
+    opacity: 100%;
+    transform: translateX(0);
   }
 }
 body {

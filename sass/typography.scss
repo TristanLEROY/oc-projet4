@@ -107,10 +107,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-left: -25.5%;
+    margin-left: 6.5%;
     border-bottom: $color-tertiaire 2px solid;
     width: 2.5rem;
     height: 1.688rem;
+
+    @media (min-width: 1024px) {
+      margin-left: -25.5%;
+    }
   }
   &-cards {
     &-title {

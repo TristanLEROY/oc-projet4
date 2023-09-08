@@ -4,7 +4,7 @@
     opacity: 0;
   }
   to {
-    margin-left: 0%;
+    margin-left: 0;
     opacity: 1;
   }
 }
@@ -29,15 +29,13 @@
     transform: scaleX(1) scaleY(1.5);
   }
 }
-@keyframes slideup {
+@keyframes progress-check {
   from {
-    margin-bottom: 1000px;
-    width: 100%;
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
-    margin-bottom: 0%;
-    width: 100%;
-    opacity: 1;
+    opacity: 100%;
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=keyframe.css.map */
