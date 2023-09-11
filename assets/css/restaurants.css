@@ -134,9 +134,11 @@
 }
 @keyframes disappear {
   from {
+    width: 100%;
     opacity: 1;
   }
   to {
+    width: 0;
     opacity: 0;
   }
 }
@@ -593,9 +595,11 @@
 }
 @keyframes disappear {
   from {
+    width: 100%;
     opacity: 1;
   }
   to {
+    width: 0;
     opacity: 0;
   }
 }
@@ -711,8 +715,9 @@ main .main-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main-container {
-  margin: -8px;
+
+body {
+  margin: 0;
 }
 
 .logo {
@@ -724,6 +729,20 @@ main .main-container {
 .logo-main {
   display: flex;
   height: 2.25rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0 0.938rem;
+}
+@media (min-width: 1024px) {
+  .section-content {
+    display: flex;
+    align-self: center;
+    width: 50%;
+  }
 }
 
 .page-heart {
@@ -741,20 +760,6 @@ main .main-container {
   -webkit-background-clip: text;
           background-clip: text;
   background-image: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-}
-
-.section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 0 0.938rem;
-}
-@media (min-width: 1024px) {
-  .section-content {
-    display: flex;
-    align-self: center;
-    width: 50%;
-  }
 }
 
 footer {

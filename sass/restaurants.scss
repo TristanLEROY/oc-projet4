@@ -4,6 +4,7 @@
 @import 'typography.scss';
 @import 'menu.scss';
 
+//main section //
 main {
   display: flex;
   flex-direction: column;
@@ -13,11 +14,13 @@ main {
     height: 17.1rem;
     object-fit: cover;
   }
-  .main-container {
-    margin: -8px;
-  }
 }
 
+body {
+  margin: 0;
+}
+
+//header//
 .logo {
   display: flex;
   justify-content: center;
@@ -30,6 +33,21 @@ main {
   }
 }
 
+//section content
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0 0.938rem;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-self: center;
+    width: 50%;
+  }
+}
+
+// heart animation//
 .page-heart {
   -webkit-text-stroke: 1px black;
   color: white;
@@ -54,18 +72,7 @@ main {
   }
 }
 
-.section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 0 0.938rem;
-
-  @media (min-width: 1024px) {
-    display: flex;
-    align-self: center;
-    width: 50%;
-  }
-}
+//footer //
 
 footer {
   background-color: $footer-color;
