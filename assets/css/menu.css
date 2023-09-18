@@ -120,7 +120,7 @@
 }
 @media (min-width: 1024px) {
   .menu-title {
-    margin-left: -25.5%;
+    margin-left: 5.5%;
   }
 }
 .menu-cards-title {
@@ -190,9 +190,11 @@
 }
 @keyframes disappear {
   from {
+    width: 100%;
     opacity: 1;
   }
   to {
+    width: 0;
     opacity: 0;
   }
 }
@@ -271,7 +273,7 @@
 }
 @media (min-width: 1024px) {
   .menu-cards {
-    width: 150%;
+    width: 88%;
   }
 }
 .menu-cards-body {
@@ -285,7 +287,6 @@
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: -1.25rem;
 }
 
 .fa-check {

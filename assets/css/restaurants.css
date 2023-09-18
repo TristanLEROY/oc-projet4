@@ -363,15 +363,10 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-left: 6.5%;
+  margin-left: 7.5%;
   border-bottom: #99e2d0 2px solid;
   width: 2.5rem;
   height: 1.688rem;
-}
-@media (min-width: 1024px) {
-  .menu-title {
-    margin-left: -25.5%;
-  }
 }
 .menu-cards-title {
   font-family: Roboto;
@@ -379,7 +374,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -393,6 +388,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 5px;
 }
 .menu-cards-price {
   color: #353535;
@@ -518,15 +514,10 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-left: 6.5%;
+  margin-left: 7.5%;
   border-bottom: #99e2d0 2px solid;
   width: 2.5rem;
   height: 1.688rem;
-}
-@media (min-width: 1024px) {
-  .menu-title {
-    margin-left: -25.5%;
-  }
 }
 .menu-cards-title {
   font-family: Roboto;
@@ -534,7 +525,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -548,6 +539,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 5px;
 }
 .menu-cards-price {
   color: #353535;
@@ -678,7 +670,7 @@
 }
 @media (min-width: 1024px) {
   .menu-cards {
-    width: 150%;
+    width: 88%;
   }
 }
 .menu-cards-body {
@@ -692,7 +684,6 @@
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: -1.25rem;
 }
 
 .fa-check {
@@ -741,7 +732,7 @@ body {
   .section-content {
     display: flex;
     align-self: center;
-    width: 50%;
+    width: 100%;
   }
 }
 
