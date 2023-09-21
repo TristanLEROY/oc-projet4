@@ -21,6 +21,9 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   gap: 1.688rem;
 }
+.fonction-button-unit:hover > .fonction-button-unit-grey {
+  color: #9356dc;
+}
 @media (min-width: 1024px) {
   .fonction-button-unit {
     display: flex;
@@ -28,8 +31,16 @@
   }
 }
 
-.fonction-button-unit-purple {
-  color: #9356dc;
+.fa-mobile-screen-button {
+  margin-right: 5px;
+}
+
+.fa-list {
+  margin-right: 20px;
+}
+
+.fa-store {
+  margin-right: 15px;
 }
 
 .title-page-button {
@@ -362,15 +373,10 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-left: 6.5%;
+  margin-left: 7.5%;
   border-bottom: #99e2d0 2px solid;
   width: 2.5rem;
   height: 1.688rem;
-}
-@media (min-width: 1024px) {
-  .menu-title {
-    margin-left: -25.5%;
-  }
 }
 .menu-cards-title {
   font-family: Roboto;
@@ -378,7 +384,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -392,6 +398,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 5px;
 }
 .menu-cards-price {
   color: #353535;
@@ -400,6 +407,22 @@
   font-size: 0.938rem;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+
+.fat-link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.thin-link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
